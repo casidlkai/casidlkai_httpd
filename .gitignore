@@ -54,3 +54,4 @@ dkms.conf
 
 notes.md
 .idea/
+cmake-build-debug/

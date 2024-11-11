@@ -1,3 +1,0 @@
-D:/Progams/C++/casidlkai_httpd/cmake-build-debug/CMakeFiles/casidlkai_httpd.dir
-D:/Progams/C++/casidlkai_httpd/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Progams/C++/casidlkai_httpd/cmake-build-debug/CMakeFiles/rebuild_cache.dir

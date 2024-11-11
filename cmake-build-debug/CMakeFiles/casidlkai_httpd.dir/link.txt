@@ -1,3 +1,0 @@
-"D:\Program Files (x86)\JetBrains\CLion 2021.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\casidlkai_httpd.dir/objects.a
-C:\MinGW-w64\mingw64\bin\ar.exe cr CMakeFiles\casidlkai_httpd.dir/objects.a @CMakeFiles\casidlkai_httpd.dir\objects1.rsp
-C:\MinGW-w64\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\casidlkai_httpd.dir/objects.a -Wl,--no-whole-archive -o casidlkai_httpd.exe -Wl,--out-implib,libcasidlkai_httpd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\casidlkai_httpd.dir\linklibs.rsp
