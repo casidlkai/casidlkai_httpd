@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: fangsong;
+}
+
+ul {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    flex-basis: 100%;
+    padding: 2px 0px 2px 0px;
+    display: flex;
+}
+
+/* 承载内容部分 */
+.container {
+    width: 620px;
+    height: auto;
+    border: 1px solid skyblue;
+    margin: 0 auto;
+    padding: 20px 10px;
+    display: flex;
+}
+
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 个人基本信息 */
+header {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px;
+    display: flex;
+    position: relative;
+}
+
+.basic-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.basic-info h2 {
+    font-size: 20px;
+    padding: 5px 0px;
+}
+
+.basic-info p {
+    font-size: 14px;
+    padding: 2px 0px;
+}
+
+img {
+    width: 60px;
+    height: 80px;
+    top: 0px;
+    right: 5px;
+    position: absolute;
+}
+
+/* 主体部分内容 */
+article {
+    width: 100%;
+    text-align: left;
+    position: relative;
+}
+
+/* 模块标题 */
+.title {
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    padding: 5px 0px 5px 15px;
+    background-color: #fcf4f4;
+    position: relative;
+    align-items: center;
+}
+
+/* 模块标题左侧红色方块 */
+.title .color-block {
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: red;
+    position: absolute;
+}
+
+/* 小标题及经历时间模块 */
+.unit {
+    position: relative;
+}
+
+.unit h5 {
+    font-size: 15px;
+    display: inline-block;
+}
+
+.unit span {
+    font-size: 14px;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+
+}
+
+/* 详细经历 */
+.detail {
+    position: relative;
+}
+
+.detail {
+    padding-left: 20px;
+    position: relative;
+    list-style: none;
+}
+
+.detail::before {
+    content: "·";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    line-height: 1;
+}
