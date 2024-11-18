@@ -1,11 +1,3 @@
-/********************************************************************************
-* @author: casidlkai
-* @website: casidlkai.com
-* @date: 2024/10/31 
-* @version: 1.0
-* @description: 
-********************************************************************************/
-
 #include "../include/startup.h"
 
 /*
@@ -24,7 +16,7 @@ int startup (unsigned short *port)
 	WSADATA data;
 	// 定义绑定的未连接的套接字            // 指向 WSADATA 数据结构的指针，用于接收 Windows 套接字实现的详细信息
 	if (WSAStartup(MAKEWORD(1, 1), &data))
-		error_die("WSAStartup");    // 输出报错信息
+		error_die("WSAStartup");
 
 	// socket()套接字函数创建绑定到特定传输服务提供程序的套接字
 	httpd = socket(    // 定义返回套接字

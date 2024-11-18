@@ -1,13 +1,6 @@
-/********************************************************************************
-* @author: casidlkai
-* @website: casidlkai.com
-* @date: 2024/10/31 
-* @version: 1.0
-* @description: 
-********************************************************************************/
-
 #include "../include/get_mime_type.h"
 
+// 分析请求资源的格式，将资源按照该格式发送给客户端
 const char *get_mime_type (const char *filename)
 {
 	if (strstr(filename, ".html") || strstr(filename, ".htm"))

@@ -1,11 +1,3 @@
-/********************************************************************************
-* @author: casidlkai
-* @website: casidlkai.com
-* @date: 2024/10/31 
-* @version: 1.0
-* @description: 
-********************************************************************************/
-
 #include <stdio.h>
 #include <sys/stat.h>
 #include <winsock2.h>

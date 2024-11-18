@@ -1,14 +1,6 @@
-/********************************************************************************
-* @author: casidlkai
-* @website: casidlkai.com
-* @date: 2024/10/31 
-* @version: 1.0
-* @description: 
-********************************************************************************/
-
 #include "../include/unimplement.h"
 
-// 向指定套接字发送一个提示还没有实现的错误页面
+// 返回给浏览器表明收到的 HTTP 请求所用的 method 不被支持
 void unimplement (int client)
 {
 	char buf[1024];

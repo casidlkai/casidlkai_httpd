@@ -1,14 +1,6 @@
-/********************************************************************************
-* @author: casidlkai
-* @website: casidlkai.com
-* @date: 2024/10/31 
-* @version: 1.0
-* @description: 
-********************************************************************************/
-
 #include "../include/server_file.h"
 
-// 向客户端返回文件资源
+// 调用 cat 把服务器文件返回给浏览器
 void server_file (int client, const char *fileName)
 {
 	FILE *resource = NULL;

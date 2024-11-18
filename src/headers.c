@@ -1,14 +1,6 @@
-/********************************************************************************
-* @author: casidlkai
-* @website: casidlkai.com
-* @date: 2024/10/31 
-* @version: 1.0
-* @description: 
-********************************************************************************/
-
 #include "../include/headers.h"
 
-// 打包HTTP标头，状态码为200时将内容返回给客户端
+// 打包HTTP标头，请求正常状态码为200时将内容返回给客户端
 void headers (int client, const char *filename)
 {
 	char buf[4096];

@@ -1,13 +1,6 @@
-/********************************************************************************
-* @author: casidlkai
-* @website: casidlkai.com
-* @date: 2024/10/31
-* @version: 1.0
-* @description:
-********************************************************************************/
-
 #include "../include/cat.h"
 
+// 读取服务器上某个文件写到 socket 套接字
 void cat(int client, FILE *resource)
 {
 	char buf[65536];

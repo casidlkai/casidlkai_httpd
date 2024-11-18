@@ -1,14 +1,6 @@
-/********************************************************************************
-* @author: casidlkai
-* @website: casidlkai.com
-* @date: 2024/10/31 
-* @version: 1.0
-* @description: 
-********************************************************************************/
-
 #include "../include/accept_request.h"
 
-// 处理用户请求的线程函数
+// 处理从套接字上监听到的一个 HTTP 请求
 DWORD WINAPI accept_request (LPVOID arg)
 {
 	char buf[1024] = {0};

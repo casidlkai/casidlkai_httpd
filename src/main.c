@@ -1,11 +1,3 @@
-/********************************************************************************
-* @author: casidlkai
-* @website: casidlkai.com
-* @date: 2024/10/31
-* @version: 1.0
-* @description: 主函数
-********************************************************************************/
-
 #include <string.h>
 #include "../include/cat.h"
 #include "../include/error_die.h"
@@ -28,12 +20,15 @@ int main ()
 	int s_sock = startup(&port);    // 服务器端套接字
 	// 打印监听到的端口号
 	printf("httpd is already, Listening on port %d\n", port);
+
+	// 初始化并监听客户端请求
 	struct sockaddr_in c_addr;
 	int c_addr_len = sizeof(c_addr);
 	while (1)
 	{
 		// 阻塞式等待用户发起访问
 		int c_sock = accept(s_sock, (struct sockaddr *) &c_addr, &c_addr_len);
+		// 新线程套接字创建失败则退出程序
 		if (c_sock == -1)
 			error_die("accept");
 
